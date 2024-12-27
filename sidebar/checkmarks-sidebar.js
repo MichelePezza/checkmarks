@@ -125,7 +125,6 @@ function CheckmarksSidebar() {
      */
     this.init = function () {
         console.debug('DEBUG: Initializing...');
-        setIcon();
         setFilters();
         restoreRun();
         // Start button that initializes the chain of events.
@@ -215,21 +214,6 @@ function CheckmarksSidebar() {
                 PROGRESS.innerText = '';
             }
         })
-    };
-
-    let setIcon = function () {
-        const isDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        console.info(`INFO: Dark color scheme: ${isDarkScheme}.`);
-
-        browser.sidebarAction.setIcon({
-            path: isDarkScheme ? {
-                16: '/assets/images/icon-light.svg',
-                32: '/assets/images/icon-light.svg'
-            } : {
-                16: '/assets/images/icon-dark.svg',
-                32: '/assets/images/icon-dark.svg'
-            }
-        }).then(() => console.info('INFO: Icon set.'));
     };
 
     /**

@@ -2,13 +2,13 @@
   "manifest_version": 2,
   "name": "Checkmarks",
   "description": "Checks, sorts, formats bookmarks and loads favicons.",
-  "version": "1.6.1",
+  "version": "1.6.2",
   "icons": {
     "48": "assets/images/logo.svg",
     "96": "assets/images/logo.svg"
   },
   "sidebar_action": {
-    "default_icon": "assets/images/icon-light.svg",
+    "default_icon": "assets/images/sidebar-logo.svg",
     "default_title": "Checkmarks",
     "default_panel": "sidebar/checkmarks-sidebar.html"
   },
